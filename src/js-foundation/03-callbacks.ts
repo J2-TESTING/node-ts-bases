@@ -15,16 +15,21 @@ const users: User[] = [
 ];
 
 
-export function getUserById( id: number, callback: (err?: string, user?:User) => void ) {
+export function getUserById( id: number, callback: (err?: string, user?:User)=> void  ) {
   const user = users.find( function(user){
     return user.id === id;  
   });
 
   if( !user ) {
-    return callback(`User not found with id ${id}`);
+    // setTimeout(()=> {
+    //   callback(`User not found with id ${id}`,undefined);  
+    // },2500)
+    // return
+    callback(`User not found with id ${id}`,undefined);  
+    return 
   }
-
-  return callback( undefined, user );
+  callback( undefined, user );
+  return 
 }
 
 

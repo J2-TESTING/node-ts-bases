@@ -11,7 +11,7 @@
     "build": "npm run test && rimraf ./dist && tsc",
     "start": "node dist/app.js"
   },
-  "author": "Fernando Herrera",
+  "author": "Juan Jose Collantes",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.3",

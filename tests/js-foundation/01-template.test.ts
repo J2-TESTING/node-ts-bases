@@ -1,3 +1,4 @@
+//! Importamos el sujeto de pruebas
 import { emailTemplate } from "../../src/js-foundation/01-template";
 
 
@@ -5,7 +6,7 @@ import { emailTemplate } from "../../src/js-foundation/01-template";
 describe('js-foundation/01-template.ts', () => {
 
   test('emailTemplate should contain a greeting',() =>{
-
+    //console.log(emailTemplate)
       expect( emailTemplate ).toContain('Hi, ');
   });
 

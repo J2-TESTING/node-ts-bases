@@ -12,7 +12,7 @@ interface PersonOptions {
   birthdate: string;
 }
 
-
+//!Recibimos las dependencias como argumentos
 export const buildMakePerson = ({ getAge, getUUID }: BuildMakerPersonOptions) => {
 
   return ({ name, birthdate }: PersonOptions) => {
